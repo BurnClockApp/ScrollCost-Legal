@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ScrollCost</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #F5F3EF;
+      color: #1C1917;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 32px 20px 64px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    /* ── Header / Wordmark ── */
+    .header {
+      text-align: center;
+      padding: 40px 0 36px;
+      border-bottom: 1px solid #E2DDD6;
+      margin-bottom: 40px;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .wordmark-icon {
+      width: 44px;
+      height: 44px;
+      background-color: #8B5E2E;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .wordmark-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: #F5F3EF;
+    }
+
+    .wordmark-text {
+      font-size: 26px;
+      font-weight: 700;
+      color: #1C1917;
+      letter-spacing: -0.5px;
+    }
+
+    .wordmark-text span {
+      color: #8B5E2E;
+    }
+
+    .header-subtitle {
+      margin-top: 16px;
+      font-size: 22px;
+      font-weight: 600;
+      color: #1C1917;
+    }
+
+    .header-meta {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #6B6560;
+    }
+
+    /* ── Sections ── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #8B5E2E;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #E2DDD6;
+    }
+
+    p {
+      margin-bottom: 12px;
+      color: #1C1917;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      color: #1C1917;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Callout box ── */
+    .callout {
+      background-color: #EDE9E1;
+      border-left: 4px solid #8B5E2E;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 15px;
+    }
+
+    .callout strong {
+      color: #8B5E2E;
+    }
+
+    /* ── Third-party table ── */
+    .service-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14.5px;
+      margin-top: 12px;
+    }
+
+    .service-table thead tr {
+      background-color: #8B5E2E;
+      color: #F5F3EF;
+    }
+
+    .service-table thead th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .service-table tbody tr:nth-child(even) {
+      background-color: #EDE9E1;
+    }
+
+    .service-table tbody tr:nth-child(odd) {
+      background-color: #F5F3EF;
+    }
+
+    .service-table tbody td {
+      padding: 10px 14px;
+      vertical-align: top;
+      border-bottom: 1px solid #E2DDD6;
+    }
+
+    .service-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ── Rights list ── */
+    .rights-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .rights-list li {
+      padding: 10px 12px;
+      border-radius: 6px;
+      background-color: #EDE9E1;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .rights-list li strong {
+      color: #8B5E2E;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background-color: #1C1917;
+      color: #F5F3EF;
+      border-radius: 10px;
+      padding: 24px;
+      margin-top: 12px;
+    }
+
+    .contact-box p {
+      color: #D6CFC4;
+      font-size: 15px;
+    }
+
+    .contact-box a {
+      color: #C9924E;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #E2DDD6;
+      text-align: center;
+      font-size: 13px;
+      color: #9D9590;
+    }
+
+    /* ── Responsive tweaks ── */
+    @media (max-width: 480px) {
+      body {
+        font-size: 15px;
+        padding: 20px 16px 48px;
+      }
+
+      .header {
+        padding: 28px 0 28px;
+      }
+
+      .wordmark-text {
+        font-size: 22px;
+      }
+
+      .header-subtitle {
+        font-size: 19px;
+      }
+
+      .service-table {
+        font-size: 13px;
+      }
+
+      .service-table thead th,
+      .service-table tbody td {
+        padding: 8px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header class="header">
+      <a class="wordmark" href="#">
+        <div class="wordmark-icon">
+          <!-- Coin / dollar icon -->
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm.75 14.75v.5a.75.75 0 0 1-1.5 0v-.5c-1.243-.185-2.25-1.07-2.25-2.25a.75.75 0 0 1 1.5 0c0 .414.504.75 1.125.75h.75c.621 0 1.125-.336 1.125-.75s-.504-.75-1.125-.75H12c-1.45 0-2.625-.98-2.625-2.25S10.55 9.25 12 9.25v-.5a.75.75 0 0 1 1.5 0v.5c1.243.185 2.25 1.07 2.25 2.25a.75.75 0 0 1-1.5 0c0-.414-.504-.75-1.125-.75h-.75C11.754 10.75 11.25 11.086 11.25 11.5s.504.75 1.125.75H12.375c1.45 0 2.625.98 2.625 2.25s-1.175 2.25-2.625 2.25z"/>
+          </svg>
+        </div>
+        <span class="wordmark-text">Scroll<span>Cost</span></span>
+      </a>
+      <h1 class="header-subtitle">Privacy Policy</h1>
+      <p class="header-meta">Last updated: March 2025 &nbsp;|&nbsp; Package: com.scrollcost.app</p>
+    </header>
+
+    <!-- 1. Overview -->
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <p>
+        ScrollCost is an Android application that helps you understand the real cost of your screen time by
+        converting app usage into a dollar value based on your personal hourly rate. This Privacy Policy
+        explains what information we collect, how we use it, and how we protect it.
+      </p>
+      <p>
+        ScrollCost is developed and operated by an individual developer based in Canada. We are committed to
+        handling your personal information responsibly in accordance with the
+        <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> and in a manner
+        consistent with the principles of the <strong>General Data Protection Regulation (GDPR)</strong>.
+      </p>
+      <div class="callout">
+        <strong>The short version:</strong> We collect as little as possible. Your app usage data and personal
+        settings never leave your device. We only receive what is strictly necessary to run authentication and
+        subscription services.
+      </div>
+    </section>
+
+    <!-- 2. Information We Collect -->
+    <section id="information-we-collect">
+      <h2>2. Information We Collect</h2>
+
+      <p><strong>a) Information you provide directly</strong></p>
+      <ul>
+        <li>
+          <strong>Phone number</strong> — collected when you sign in using phone-number authentication
+          (OTP via Firebase). This is used solely to verify your identity.
+        </li>
+        <li>
+          <strong>Google account name and email address</strong> — collected only if you choose to sign in
+          with Google (optional). This information is managed by Firebase Authentication and is used only
+          for account identification.
+        </li>
+      </ul>
+
+      <p><strong>b) Information generated automatically</strong></p>
+      <ul>
+        <li>
+          <strong>Anonymous subscriber ID</strong> — RevenueCat assigns a randomly generated, anonymous
+          identifier to manage your subscription status. This ID is not linked to your name or contact
+          details.
+        </li>
+      </ul>
+
+      <p><strong>c) Information that stays on your device only</strong></p>
+      <ul>
+        <li>
+          <strong>App usage data</strong> — ScrollCost reads usage statistics from Android's
+          UsageStatsManager (which apps you used and for how long). <em>This data is processed entirely
+          on your device and is never transmitted to any server.</em>
+        </li>
+        <li>
+          <strong>Hourly rate and app settings</strong> — the hourly dollar rate you configure and any
+          other preferences are stored locally using on-device storage only.
+        </li>
+      </ul>
+
+      <p><strong>d) What we do NOT collect</strong></p>
+      <ul>
+        <li>The content of any apps you use</li>
+        <li>Location data</li>
+        <li>Contacts or address book information</li>
+        <li>Camera or microphone data</li>
+        <li>Device identifiers beyond what Firebase and RevenueCat require internally</li>
+        <li>Any personally identifiable usage statistics — usage data never leaves your device</li>
+      </ul>
+    </section>
+
+    <!-- 3. How We Use Information -->
+    <section id="how-we-use">
+      <h2>3. How We Use Information</h2>
+      <p>We use the information described above for the following purposes:</p>
+      <ul>
+        <li>
+          <strong>Authentication</strong> — your phone number or Google account is used to create and
+          maintain a secure account, so your subscription can be restored if you reinstall the app.
+        </li>
+        <li>
+          <strong>Subscription management</strong> — your anonymous RevenueCat subscriber ID is used to
+          verify your subscription status and unlock premium features.
+        </li>
+        <li>
+          <strong>App functionality</strong> — usage data and settings are processed locally to calculate
+          the cost of your screen time and display it within the app.
+        </li>
+      </ul>
+      <p>
+        We do not sell, rent, or share your personal information with third parties for marketing or
+        advertising purposes. We do not use your data to build profiles for targeted advertising.
+      </p>
+    </section>
+
+    <!-- 4. Third-Party Services -->
+    <section id="third-party">
+      <h2>4. Third-Party Services</h2>
+      <p>
+        ScrollCost integrates with the following third-party services. Each operates under its own privacy
+        policy, which we encourage you to review:
+      </p>
+      <table class="service-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Provider</th>
+            <th>Purpose</th>
+            <th>Data shared</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Firebase Authentication</strong></td>
+            <td>Google LLC</td>
+            <td>Phone OTP and Google Sign-In</td>
+            <td>Phone number or Google account email</td>
+          </tr>
+          <tr>
+            <td><strong>RevenueCat</strong></td>
+            <td>RevenueCat, Inc.</td>
+            <td>Subscription &amp; purchase management</td>
+            <td>Anonymous subscriber ID, purchase receipt metadata</td>
+          </tr>
+          <tr>
+            <td><strong>Google Play Billing</strong></td>
+            <td>Google LLC</td>
+            <td>Payment processing</td>
+            <td>Handled entirely by Google Play; we do not receive payment card details</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 14px; font-size: 14.5px; color: #6B6560;">
+        Relevant privacy policies:
+        <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" style="color:#8B5E2E;">Firebase Privacy</a> &nbsp;|&nbsp;
+        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" style="color:#8B5E2E;">RevenueCat Privacy</a> &nbsp;|&nbsp;
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" style="color:#8B5E2E;">Google Privacy Policy</a>
+      </p>
+    </section>
+
+    <!-- 5. Data Storage & Security -->
+    <section id="data-storage">
+      <h2>5. Data Storage &amp; Security</h2>
+      <p>
+        <strong>On-device data</strong> (usage statistics, hourly rate, settings) is stored exclusively on
+        your Android device using standard Android storage mechanisms. It is never transmitted to our servers
+        or any third-party server.
+      </p>
+      <p>
+        <strong>Authentication data</strong> (phone number or Google account details) is stored and managed
+        by Firebase Authentication on Google's infrastructure, which is protected by industry-standard
+        encryption in transit (TLS) and at rest.
+      </p>
+      <p>
+        <strong>Subscription data</strong> is stored by RevenueCat. Only an anonymous subscriber ID and
+        purchase receipt metadata are associated with your account.
+      </p>
+      <p>
+        We take reasonable precautions to protect the information we do hold. However, no method of
+        electronic storage or transmission is 100% secure. If you have reason to believe your account has
+        been compromised, please contact us immediately.
+      </p>
+      <p>
+        We retain your authentication information for as long as your account is active. If you delete your
+        account, we will request deletion of your data from Firebase Authentication. Subscription records
+        held by RevenueCat are subject to RevenueCat's own retention practices.
+      </p>
+    </section>
+
+    <!-- 6. Children's Privacy -->
+    <section id="childrens-privacy">
+      <h2>6. Children's Privacy</h2>
+      <p>
+        ScrollCost is not directed at children under the age of 13. We do not knowingly collect personal
+        information from children under 13. If you are a parent or guardian and believe your child has
+        provided us with personal information, please contact us and we will take steps to delete that
+        information promptly.
+      </p>
+    </section>
+
+    <!-- 7. Your Rights -->
+    <section id="your-rights">
+      <h2>7. Your Rights</h2>
+      <p>
+        Depending on your jurisdiction, you may have the following rights regarding your personal
+        information:
+      </p>
+      <ul class="rights-list">
+        <li>
+          <strong>Right to Access</strong>
+          You may request a copy of the personal information we hold about you.
+        </li>
+        <li>
+          <strong>Right to Correction</strong>
+          You may request that inaccurate or incomplete information be corrected.
+        </li>
+        <li>
+          <strong>Right to Deletion</strong>
+          You may request that we delete your personal information. For authentication data, this means
+          requesting deletion from Firebase. On-device data can be erased by uninstalling the app.
+        </li>
+        <li>
+          <strong>Right to Withdraw Consent</strong>
+          Where we rely on your consent to process data, you may withdraw it at any time. Withdrawing
+          consent may limit your ability to use certain features of the app.
+        </li>
+        <li>
+          <strong>Right to Lodge a Complaint</strong>
+          Canadian residents may contact the Office of the Privacy Commissioner of Canada (OPC) at
+          <a href="https://www.priv.gc.ca" target="_blank" rel="noopener noreferrer" style="color:#8B5E2E;">priv.gc.ca</a>.
+          EEA/UK residents may lodge a complaint with their local data protection authority.
+        </li>
+      </ul>
+      <p>
+        To exercise any of these rights, please contact us using the details in the Contact section below.
+        We will respond within 30 days.
+      </p>
+    </section>
+
+    <!-- 8. Changes to This Policy -->
+    <section id="changes">
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we make material changes, we will update
+        the "Last updated" date at the top of this page and, where appropriate, notify you within the app.
+      </p>
+      <p>
+        Your continued use of ScrollCost after any changes to this policy constitutes your acceptance of the
+        revised terms. We encourage you to review this page periodically.
+      </p>
+    </section>
+
+    <!-- 9. Contact Us -->
+    <section id="contact">
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices,
+        please reach out:
+      </p>
+      <div class="contact-box">
+        <p><strong style="color:#F5F3EF;">ScrollCost — Privacy Inquiries</strong></p>
+        <p style="margin-top: 8px;">
+          Email: <a href="mailto:burnclock.app@gmail.com">burnclock.app@gmail.com</a>
+        </p>
+        <p style="margin-top: 6px;">Developer location: Canada</p>
+        <p style="margin-top: 14px; font-size: 14px;">
+          We aim to respond to all privacy-related inquiries within <strong style="color:#F5F3EF;">30 days</strong>
+          of receipt.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2025 ScrollCost. All rights reserved.</p>
+      <p style="margin-top: 6px;">com.scrollcost.app &nbsp;|&nbsp; Canada</p>
+    </footer>
+
+  </div>
+</body>
+</html>
